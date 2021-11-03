@@ -1,0 +1,23 @@
+
+$fontfamily:"Avenir", sans-serif;
+$minwidth:320px;
+
+@import "mixins";
+@import "null";
+@import "header";
+@import "footer";
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	background-color: rgba($color: #817e7e, $alpha: 1.0);
+}
+
+.container{
+	max-width: 1470px;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+
+
+

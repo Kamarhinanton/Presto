@@ -1,0 +1,121 @@
+.header-footer {
+
+    &__content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 132px;
+        svg{
+            fill: #fff;
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            width: 1920px;
+            height: 1px;
+            background-color: #fff;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__logo {
+        padding: 0 0 0 3px;
+        svg{
+            width: 239px;
+            height: 84px;
+        }
+    }
+
+    &__list {
+        padding: 20px 58px 0 0;
+        display: flex;
+        width: 100%;
+        max-width: 847px;
+        justify-content: space-between;
+        margin: 0 50px;
+    }
+    
+    &__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    padding: 0 10px 0 0;
+    &:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        height: 1px;
+        width: 0;
+        transition: 300ms;
+    }
+    &:last-child{
+        padding: 0;
+    }
+    a{
+        color: #fff;
+    }
+    &:hover{
+        &:before{
+            width: 100%;
+        }
+    }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 110px;
+        padding: 20px 0 0 5px;
+    }
+
+    &__network {
+        padding: 0 10px 0 0;
+        opacity: 1;
+        transition: 300ms;
+        &:last-child{
+            padding: 0;
+        }
+        &.twitter{
+            svg{
+                width: 15px;
+                height: 13px;
+            }
+        }
+        &.linkedin{
+            svg{
+                width: 14px;
+                height: 15px;
+            }
+        }
+        &.youtube{
+            padding: 3px 0 0 0;
+            svg{
+                width: 21px;
+                height: 15px;
+            }
+        }
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    &__bottom{
+    font-family: 'Nexa-Book', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    padding: 34px 0;
+    }
+}
+
+

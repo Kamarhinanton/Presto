@@ -1,0 +1,12 @@
+.footer{
+    background-color: #0376C3;
+    .header-footer{
+        &__content{
+            height: 186px;
+            &:before{
+                width: 100%;
+                opacity: 0.2;
+            }
+        }
+    }
+}
