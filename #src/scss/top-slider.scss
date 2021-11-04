@@ -1,0 +1,84 @@
+.top-slider {
+    &__container {
+        margin: 140px 0 150px 0;
+        max-width: 667px;
+        height: 555px;
+    }
+    &__pagination{
+        position: static;
+        text-align: left;
+        color: #FFFFFF;
+        display: flex;
+        width: 70px;
+        justify-content: space-between;
+        .swiper-pagination-current{
+            font-family: 'Pier-sans', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 30px;
+            text-transform: capitalize;
+            width: 37px;
+        }
+        .swiper-pagination-total{
+            font-family: 'Pier-sans', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.slide {
+    max-width: 667px;
+    height: 555px;
+    color: #FFFFFF;
+    padding: 0 10px;
+    &__title {
+        font-family: 'Pier-sans', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 90px;
+        line-height: 108px;
+        text-transform: capitalize;
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: capitalize;
+        opacity: 0.9;
+        margin: 18px 0 110px 0;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 410px;
+    }
+
+    &__item {
+        max-width: 100px;
+        &_top {
+            font-family: 'Pier-sans', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 36px;
+            text-transform: lowercase;
+        }
+
+        &_bottom {
+            margin: 15px 0 0 0;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: lowercase;
+        }
+    }
+}

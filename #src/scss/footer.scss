@@ -1,4 +1,6 @@
 .footer{
+    position: relative;
+    z-index: 2;
     background-color: #0376C3;
     .header-footer{
         &__content{
@@ -23,6 +25,11 @@
                 padding: 0;
                 margin: 0 10px;
                 width: calc((100% - (10px * 6)) / 3);
+                &:hover{
+                    &:before{
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -38,10 +45,10 @@
                 padding: 0;
             }
             &__logo{
-                padding: 0;
+                padding: 20px 0 0 0;
             }
             &__list{
-                margin: 50px -10px;
+                margin: 20px 0;
                 max-width: 242px;
             }
             &__link{
