@@ -2,10 +2,55 @@
     background-color: #0376C3;
     .header-footer{
         &__content{
-            height: 186px;
+            min-height: 186px;
             &:before{
                 width: 100%;
                 opacity: 0.2;
+            }
+        }
+    }
+}
+
+@media(max-width: 1023px){
+    .footer{
+        .header-footer{
+            &__list{
+                padding: 0;
+                flex-wrap: wrap;
+                margin: 0 30px;
+            }
+            &__link{
+                padding: 0;
+                margin: 0 10px;
+                width: calc((100% - (10px * 6)) / 3);
+            }
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .footer{
+        .header-footer{
+            &__content{
+                flex-direction: column;
+            }
+            &__social{
+                padding: 0;
+            }
+            &__logo{
+                padding: 0;
+            }
+            &__list{
+                margin: 50px -10px;
+                max-width: 242px;
+            }
+            &__link{
+                margin: 10px 10px;
+                width: calc((100% - (10px * 4)) / 2);
+            }
+            &__social{
+                margin: 20px 0;
+                max-width: 242px;
             }
         }
     }
