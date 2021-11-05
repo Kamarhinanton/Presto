@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
     burgerAnimation();
     bg();
     swiperTop();
+    scrollPage();
 })
 
 const burgerAnimation = () => {
@@ -46,6 +47,21 @@ const swiperTop = () => {
     function addZero(num) {
         return (num > 9) ? num : '0' + num;
     }
+}
+
+const scrollPage = () => {
+    let scrollPosition;
+    const header = document.querySelector('.header');
+    const scrollChange = 1;
+
+    const addClass = () => header.classList.add("hide")
+    const removeClass = () => header.classList.remove("hide")
+
+    window.addEventListener('scroll', function () {
+        scrollPosition = window.scrollY;
+        if (scrollPosition >= scrollChange) { addClass() }
+        else { removeClass() }
+    })
 }
 
 

@@ -6,7 +6,8 @@ $minwidth:320px;
 @import "null";
 @import "header";
 @import "footer";
-@import "top-slider";
+@import "block-1";
+@import "block-2";
 @import "form";
 
 .wrapper{
@@ -48,7 +49,7 @@ $minwidth:320px;
 		&__bg {
 			position: absolute;
 			width: 100%;
-			height: 992px;
+			height: 975px;
 			top: 0;
 			left: 0;
 		}
