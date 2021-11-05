@@ -34,9 +34,9 @@ const swiperTop = () => {
         },
         slidesPerView: 1,
         slidesPerGroup: 1,
-        // autoplay: {
-        //     delay: 3000,
-        // },
+        autoplay: {
+            delay: 3000,
+        },
         preloadImages: false,
         lazy: {
             loadOnTransitionStart: false,
@@ -47,6 +47,7 @@ const swiperTop = () => {
         return (num > 9) ? num : '0' + num;
     }
 }
+
 
 
 
