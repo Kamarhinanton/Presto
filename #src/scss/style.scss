@@ -12,6 +12,7 @@ $bluecolor:#0376C4;
 @import "block-2";
 @import "block-3";
 @import "block-4";
+@import "block-5";
 @import "form";
 
 .wrapper{
@@ -119,6 +120,18 @@ $bluecolor:#0376C4;
 	background: #EDF5FB;
 	border-radius: 10px;
 }
+
+.button{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 33px;
+    height: 44px;
+    background-color: $bluecolor;
+    border-radius: 5px;
+    }
 
 
 
