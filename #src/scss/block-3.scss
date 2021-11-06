@@ -1,0 +1,97 @@
+.benefits {
+    max-width: 1626px;
+    padding: 0 15px;
+    box-sizing: content-box;
+    margin: 195px auto;
+    &__content {
+        padding: 130px 0 140px 0;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0 0 75px 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    &__svg{
+        width: 76px;
+        height: 76px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__container{
+        max-width: 187px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__link {
+        margin: 20px;
+        svg{
+            fill: #0376C4;
+        }
+        &.fire, &.dnk{
+            svg{
+                width: 76px;
+                height: 76px;
+            }
+        }
+        &.muscle{
+            svg{
+                width: 62px;
+                height: 62px;
+            }
+        }
+        &.protect{
+            svg{
+                width: 56px;
+                height: 72px;
+            }
+        }
+    }
+
+    &__pretitle {
+        margin: 25px 0;
+    }
+}
+
+@media(max-width: 1023px){
+    .benefits{
+        &__list{
+            flex-wrap: wrap;
+        }
+        &__link{
+            width: calc((100% - (20px * 4))/ 2);
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .benefits{
+        margin: 70px auto;
+        &__content{
+            padding: 50px 0;
+        }
+        &__title{
+            margin: 0 0 30px 0;
+        }
+    }
+}
+
+@media(max-width: 424px){
+    .benefits{
+        &__link{
+            width: calc(100% - (20px * 2));
+        }
+    }
+}
+

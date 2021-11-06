@@ -1,6 +1,6 @@
 .features {
     position: relative;
-    margin: 157px auto 186px auto;
+    margin: 157px auto 195px auto;
     max-width: 1920px;
     &__content {
         display: flex;
@@ -9,16 +9,6 @@
 
     &__left-block {
         margin: 0 0 0 118px;
-        &_title {
-        font-family: 'Pier-sans', sans-serif;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 70px;
-        line-height: 84px;
-        text-transform: capitalize;
-        color: #0376C4;
-        }
-
         &_subtitle {
         font-family: 'Pier-sans', sans-serif;
         font-style: normal;
@@ -120,54 +110,34 @@
             }
         }
     }
-}
-
-.bottom-card {
-    width: 100%;
-    height: 471px;
-    max-width: 397px;
-    box-sizing: content-box;
-    background: #EDF5FB;
-    border-radius: 10px;
-    &__content{
-        max-width: 200px;
-        margin: 0 auto;
-    }
-    &__img {
-        text-align: right;
-        max-width: 307px;
-        height: 203px;
-        margin: 0 0 0 auto;
-        img{
-            width: 100%;
-            height: 100%;
+    .bottom-card {
+        width: 100%;
+        height: 471px;
+        max-width: 397px;
+        box-sizing: content-box;
+        &__content{
+            max-width: 200px;
+            margin: 0 auto;
         }
-    }
-
-    &__title {
-        font-family: 'Pier-sans', sans-serif;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #0376C4;
-        opacity: 0.9;
-        margin: 10px 0 30px 0;
-    }
-
-    &__subtitle {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
-        text-align: center;
-        color: #000000;
-        p{
-            &:last-child{
-                margin: 25px 0 0 0;
-                font-style: italic;
+        &__img {
+            text-align: right;
+            max-width: 307px;
+            height: 203px;
+            margin: 0 0 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__title{
+            margin: 10px 0 30px 0;
+        }
+        &__subtitle {
+            p{
+                &:last-child{
+                    margin: 25px 0 0 0;
+                    font-style: italic;
+                }
             }
         }
     }
@@ -199,11 +169,6 @@
         }
         &__eye{
             display: none;
-        }
-        &__left-block{
-            &_title{
-                font-size: 55px;
-            }
         }
         &__right-block{
             &_description{

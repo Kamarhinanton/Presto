@@ -484,14 +484,14 @@ h6 {
   text-transform: capitalize;
 }
 
-.slide {
+.top-slider .slide {
   max-width: 667px;
   height: 555px;
   color: #FFFFFF;
   padding: 0 10px;
 }
 
-.slide__title {
+.top-slider .slide__title {
   font-family: 'Pier-sans', sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -501,7 +501,7 @@ h6 {
   margin: 10px 0 0 0;
 }
 
-.slide__subtitle {
+.top-slider .slide__subtitle {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -512,7 +512,7 @@ h6 {
   max-width: 563px;
 }
 
-.slide__bottom {
+.top-slider .slide__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,15 +523,15 @@ h6 {
   max-width: 425px;
 }
 
-.slide__item {
+.top-slider .slide__item {
   max-width: 100px;
 }
 
-.slide__item:nth-child(2) {
+.top-slider .slide__item:nth-child(2) {
   padding: 0 0 0 10px;
 }
 
-.slide__item_top {
+.top-slider .slide__item_top {
   font-family: 'Pier-sans', sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -540,7 +540,7 @@ h6 {
   text-transform: lowercase;
 }
 
-.slide__item_bottom {
+.top-slider .slide__item_bottom {
   margin: 10px 0 0 0;
   font-weight: 500;
   font-size: 18px;
@@ -550,7 +550,7 @@ h6 {
 
 .features {
   position: relative;
-  margin: 157px auto 186px auto;
+  margin: 157px auto 195px auto;
   max-width: 1920px;
 }
 
@@ -565,16 +565,6 @@ h6 {
 
 .features__left-block {
   margin: 0 0 0 118px;
-}
-
-.features__left-block_title {
-  font-family: 'Pier-sans', sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 70px;
-  line-height: 84px;
-  text-transform: capitalize;
-  color: #0376C4;
 }
 
 .features__left-block_subtitle {
@@ -689,58 +679,120 @@ h6 {
   margin: 0 0 20px 0;
 }
 
-.bottom-card {
+.features .bottom-card {
   width: 100%;
   height: 471px;
   max-width: 397px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  background: #EDF5FB;
-  border-radius: 10px;
 }
 
-.bottom-card__content {
+.features .bottom-card__content {
   max-width: 200px;
   margin: 0 auto;
 }
 
-.bottom-card__img {
+.features .bottom-card__img {
   text-align: right;
   max-width: 307px;
   height: 203px;
   margin: 0 0 0 auto;
 }
 
-.bottom-card__img img {
+.features .bottom-card__img img {
   width: 100%;
   height: 100%;
 }
 
-.bottom-card__title {
-  font-family: 'Pier-sans', sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #0376C4;
-  opacity: 0.9;
+.features .bottom-card__title {
   margin: 10px 0 30px 0;
 }
 
-.bottom-card__subtitle {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  color: #000000;
-}
-
-.bottom-card__subtitle p:last-child {
+.features .bottom-card__subtitle p:last-child {
   margin: 25px 0 0 0;
   font-style: italic;
+}
+
+.benefits {
+  max-width: 1626px;
+  padding: 0 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 195px auto;
+}
+
+.benefits__content {
+  padding: 130px 0 140px 0;
+}
+
+.benefits__title {
+  text-align: center;
+  margin: 0 0 75px 0;
+}
+
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.benefits__svg {
+  width: 76px;
+  height: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benefits__container {
+  max-width: 187px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.benefits__link {
+  margin: 20px;
+}
+
+.benefits__link svg {
+  fill: #0376C4;
+}
+
+.benefits__link.fire svg,
+.benefits__link.dnk svg {
+  width: 76px;
+  height: 76px;
+}
+
+.benefits__link.muscle svg {
+  width: 62px;
+  height: 62px;
+}
+
+.benefits__link.protect svg {
+  width: 56px;
+  height: 72px;
+}
+
+.benefits__pretitle {
+  margin: 25px 0;
 }
 
 .form {
@@ -906,6 +958,42 @@ h6 {
   left: 0;
 }
 
+.pretitle {
+  font-family: 'Pier-sans', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 84px;
+  text-transform: capitalize;
+  color: #0376C4;
+}
+
+.cardtitle {
+  font-family: 'Pier-sans', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #0376C4;
+  opacity: 0.9;
+}
+
+.cardsubtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.bg-blue {
+  background: #EDF5FB;
+  border-radius: 10px;
+}
+
 @media (max-width: 1439px) {
   .top-slider__content {
     -webkit-box-orient: vertical;
@@ -1059,6 +1147,15 @@ h6 {
     display: none;
   }
 
+  .benefits__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .benefits__link {
+    width: calc((100% - (20px * 4))/ 2);
+  }
+
   .root {
     padding: 87px 0 0 0;
   }
@@ -1101,18 +1198,18 @@ h6 {
     height: 100%;
   }
 
-  .slide {
+  .top-slider .slide {
     max-width: 100%;
     width: 100%;
     height: 100%;
   }
 
-  .slide__title {
+  .top-slider .slide__title {
     font-size: 60px;
     line-height: 70px;
   }
 
-  .slide__subtitle {
+  .top-slider .slide__subtitle {
     margin: 18px 0 50px 0;
   }
 
@@ -1142,17 +1239,37 @@ h6 {
     display: none;
   }
 
-  .features__left-block_title {
-    font-size: 55px;
-  }
-
   .features__right-block_description {
     margin: 0 0 50px 0;
+  }
+
+  .benefits {
+    margin: 70px auto;
+  }
+
+  .benefits__content {
+    padding: 50px 0;
+  }
+
+  .benefits__title {
+    margin: 0 0 30px 0;
+  }
+
+  .pretitle {
+    font-size: 55px;
   }
 }
 
 @media (max-width: 424px) {
-  .slide__title {
+  .top-slider .slide__title {
     font-size: 48px;
+  }
+
+  .benefits__link {
+    width: calc(100% - (20px * 2));
+  }
+
+  .pretitle {
+    font-size: 42px;
   }
 }

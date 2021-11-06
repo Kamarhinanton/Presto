@@ -8,6 +8,7 @@ $minwidth:320px;
 @import "footer";
 @import "block-1";
 @import "block-2";
+@import "block-3";
 @import "form";
 
 .wrapper{
@@ -53,6 +54,48 @@ $minwidth:320px;
 			top: 0;
 			left: 0;
 		}
+}
+
+.pretitle{
+	font-family: 'Pier-sans', sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 70px;
+	line-height: 84px;
+	text-transform: capitalize;
+	color: #0376C4;
+	@media(max-width: 767px){
+		font-size: 55px;
+	}
+	@media(max-width: 424px){
+		font-size: 42px;
+	}
+}
+
+.cardtitle{
+	font-family: 'Pier-sans', sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #0376C4;
+	opacity: 0.9;
+}
+
+.cardsubtitle{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: #000000;
+}
+
+.bg-blue{
+	background: #EDF5FB;
+	border-radius: 10px;
 }
 
 
