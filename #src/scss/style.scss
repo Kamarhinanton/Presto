@@ -1,6 +1,8 @@
 
 $fontfamily:"Avenir", sans-serif;
+$fontfamily2:"Pier-sans", sans-serif;
 $minwidth:320px;
+$bluecolor:#0376C4;
 
 @import "mixins";
 @import "null";
@@ -9,6 +11,7 @@ $minwidth:320px;
 @import "block-1";
 @import "block-2";
 @import "block-3";
+@import "block-4";
 @import "form";
 
 .wrapper{
@@ -57,13 +60,13 @@ $minwidth:320px;
 }
 
 .pretitle{
-	font-family: 'Pier-sans', sans-serif;
+	font-family: $fontfamily2;
 	font-style: normal;
 	font-weight: 900;
 	font-size: 70px;
 	line-height: 84px;
 	text-transform: capitalize;
-	color: #0376C4;
+	color: $bluecolor;
 	@media(max-width: 767px){
 		font-size: 55px;
 	}
@@ -72,8 +75,19 @@ $minwidth:320px;
 	}
 }
 
+.presubtitle{
+	font-family: $fontfamily2;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 28px;
+	letter-spacing: 0.02em;
+	color: $bluecolor;
+	opacity: 0.9;
+}
+
 .cardtitle{
-	font-family: 'Pier-sans', sans-serif;
+	font-family: $fontfamily2;
 	font-style: normal;
 	font-weight: 900;
 	font-size: 16px;
@@ -81,7 +95,7 @@ $minwidth:320px;
 	text-align: center;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	color: #0376C4;
+	color: $bluecolor;
 	opacity: 0.9;
 }
 
@@ -91,6 +105,14 @@ $minwidth:320px;
 	line-height: 22px;
 	text-align: center;
 	color: #000000;
+}
+
+.description-text{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #000000;
+	opacity: 0.9;
 }
 
 .bg-blue{
