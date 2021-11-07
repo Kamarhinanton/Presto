@@ -1567,6 +1567,12 @@ h6 {
   border-radius: 5px;
 }
 
+@media (max-width: 1919px) {
+  .bottom-slider__smalldots {
+    display: none;
+  }
+}
+
 @media (max-width: 1679px) {
   .product__smalldots {
     right: 0;
@@ -1669,6 +1675,10 @@ h6 {
     height: 100%;
     max-width: 1920px;
     max-height: 1328px;
+  }
+
+  .bottom-slider__description {
+    max-width: 500px;
   }
 }
 
@@ -1845,6 +1855,34 @@ h6 {
     margin: 158px 0;
   }
 
+  .bottom-slider {
+    margin: 158px 0;
+  }
+
+  .bottom-slider__slider {
+    margin-left: 0;
+  }
+
+  .bottom-slider__title {
+    padding: 0;
+  }
+
+  .bottom-slider__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    padding: 0 0 100px 0;
+  }
+
+  .bottom-slider .slider-arrow {
+    top: inherit;
+    bottom: 0;
+  }
+
   .root {
     padding: 87px 0 0 0;
   }
@@ -2011,6 +2049,14 @@ h6 {
     margin: 0;
   }
 
+  .bottom-slider {
+    margin: 70px 0;
+  }
+
+  .bottom-slider__title.pretitle {
+    line-height: 73px;
+  }
+
   .pretitle {
     font-size: 55px;
   }
@@ -2023,6 +2069,10 @@ h6 {
 
   .benefits__link {
     width: calc(100% - (20px * 2));
+  }
+
+  .bottom-slider__title.pretitle {
+    line-height: 45px;
   }
 
   .pretitle {
