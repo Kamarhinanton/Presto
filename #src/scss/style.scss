@@ -3,6 +3,7 @@ $fontfamily:"Avenir", sans-serif;
 $fontfamily2:"Pier-sans", sans-serif;
 $minwidth:320px;
 $bluecolor:#0376C4;
+$bluecolor2:#EDF5FB;
 
 @import "mixins";
 @import "null";
@@ -124,7 +125,7 @@ $bluecolor:#0376C4;
 }
 
 .bg-blue{
-	background: #EDF5FB;
+	background: $bluecolor2;
 	border-radius: 10px;
 }
 
