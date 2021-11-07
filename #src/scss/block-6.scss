@@ -42,6 +42,32 @@
             object-fit: cover;
         }
     }
+    &__plus-text{
+        display: none;
+        position: absolute;
+        top: 111px;
+        left: -241px;
+        width: 165px;
+        font-family: $fontfamily2;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: $bluecolor;
+        opacity: 0.9;
+        transition: 100ms ease-in-out;
+        &:before{
+            content: '';
+            position: absolute;
+            top: -41px;
+            left: 61px;
+            width: 184px;
+            height: 0px;
+            border: 2px dashed $bluecolor;
+            transform: rotate(153.73deg);
+        }
+    }
     &__plus{
         position: absolute;
         top: 0;
@@ -77,6 +103,11 @@
             &:before{
                 width: 59px;
                 height: 59px;
+            }
+            .horse{
+                &__plus-text{
+                    display: block;
+                }
             }
         }
         &.plus-1{

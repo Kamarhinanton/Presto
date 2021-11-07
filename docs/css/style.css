@@ -1059,6 +1059,38 @@ h6 {
      object-fit: cover;
 }
 
+.horse__plus-text {
+  display: none;
+  position: absolute;
+  top: 111px;
+  left: -241px;
+  width: 165px;
+  font-family: "Pier-sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #0376C4;
+  opacity: 0.9;
+  -webkit-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+}
+
+.horse__plus-text:before {
+  content: '';
+  position: absolute;
+  top: -41px;
+  left: 61px;
+  width: 184px;
+  height: 0px;
+  border: 2px dashed #0376C4;
+  -webkit-transform: rotate(153.73deg);
+      -ms-transform: rotate(153.73deg);
+          transform: rotate(153.73deg);
+}
+
 .horse__plus {
   position: absolute;
   top: 0;
@@ -1109,6 +1141,10 @@ h6 {
 .horse__plus:hover:before {
   width: 59px;
   height: 59px;
+}
+
+.horse__plus:hover .horse__plus-text {
+  display: block;
 }
 
 .horse__plus.plus-1 {
