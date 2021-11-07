@@ -16,6 +16,7 @@ $bluecolor:#0376C4;
 @import "block-6";
 @import "block-7";
 @import "block-8";
+@import "block-9";
 @import "form";
 
 .wrapper{
@@ -74,9 +75,11 @@ $bluecolor:#0376C4;
 	color: $bluecolor;
 	@media(max-width: 767px){
 		font-size: 55px;
+		line-height: 73px;
 	}
 	@media(max-width: 424px){
 		font-size: 42px;
+		line-height: 45px;
 	}
 }
 

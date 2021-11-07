@@ -166,20 +166,6 @@
 @media(max-width: 767px){
     .bottom-slider{
         margin: 70px 0;
-        &__title{
-            &.pretitle{
-                line-height: 73px;
-            }
-        }
     }
 }
 
-@media(max-width: 424px){
-    .bottom-slider{
-        &__title{
-            &.pretitle{
-                line-height: 45px;
-            }
-        }
-    }
-}
