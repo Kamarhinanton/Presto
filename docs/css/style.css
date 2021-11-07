@@ -1194,7 +1194,7 @@ h6 {
 }
 
 .bottom-slider {
-  margin: 250px 0;
+  margin: 250px 0 226px 0;
 }
 
 .bottom-slider__slider {
@@ -1347,6 +1347,81 @@ h6 {
 
 .bottom-slider .slider-arrow:hover svg {
   fill: #fff;
+}
+
+.technology-2 {
+  margin: 226px 0 278px 0;
+  padding: 0 15px;
+}
+
+.technology-2__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 111px 0 110px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1626px;
+  margin: 0 auto;
+  background-color: #EDF5FB;
+  border-radius: 10px;
+}
+
+.technology-2__title {
+  padding: 0 0 133px 0;
+}
+
+.technology-2__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.technology-2__link {
+  margin: 0 15px;
+}
+
+.technology-2__link img {
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.technology-2__link.ce {
+  width: 83px;
+  height: 59px;
+}
+
+.technology-2__link.quality {
+  width: 128px;
+  height: 50px;
+}
+
+.technology-2__link.madein {
+  width: 179px;
+  height: 82px;
+}
+
+.technology-2__link.austria {
+  width: 120px;
+  height: 71px;
 }
 
 .form {
@@ -1883,6 +1958,10 @@ h6 {
     bottom: 0;
   }
 
+  .technology-2 {
+    margin: 158px 0;
+  }
+
   .root {
     padding: 87px 0 0 0;
   }
@@ -2055,6 +2134,30 @@ h6 {
 
   .bottom-slider__title.pretitle {
     line-height: 73px;
+  }
+
+  .technology-2 {
+    margin: 70px 0;
+  }
+
+  .technology-2__title {
+    padding: 0 0 50px 0;
+  }
+
+  .technology-2__content {
+    padding: 70px 0;
+  }
+
+  .technology-2__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+
+  .technology-2__link {
+    margin: 15px;
   }
 
   .pretitle {
