@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
     burgerAnimation();
     bg();
     swiperTop();
+    swiperBottom();
     scrollPage();
 })
 
@@ -47,6 +48,25 @@ const swiperTop = () => {
     function addZero(num) {
         return (num > 9) ? num : '0' + num;
     }
+}
+const swiperBottom = () => {
+    new Swiper('.bottom-slider__slider', {
+        navigation: {
+            nextEl: '.bottom-slider__next',
+            prevEl: '.bottom-slider__prev'
+        },
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        // autoplay: {
+        //     delay: 3000,
+        // },
+        loop: true,
+        preloadImages: false,
+        lazy: {
+            loadOnTransitionStart: false,
+            loadPrevNext: true,
+        },
+    });
 }
 
 const scrollPage = () => {

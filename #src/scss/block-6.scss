@@ -1,6 +1,7 @@
 .horse {
-    margin: 320px 0;
+    margin: 320px 0 250px 0;
     position: relative;
+    z-index: 2;
     padding: 0 0 1328px 0;
     &__content {
         display: flex;

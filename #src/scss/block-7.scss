@@ -1,0 +1,128 @@
+.bottom-slider {
+    margin: 250px 0;
+    &__slider {
+        margin-left: 87px;
+    }
+
+    &__content{
+        position: relative;
+    }
+
+    &__circle{
+        position: absolute;
+        top: -360px;
+        right: -520px;
+        width: 789px;
+        height: 789px;
+        border-radius: 50%;
+        background-color: #EDF5FB;
+    }
+
+    &__smalldots{
+        position: absolute;
+        bottom: -56px;
+        left: -168px;
+        width: 129px;
+        height: 115px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__slide {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 371px;
+        padding: 0 0 0 18px;
+    }
+
+    &__description {
+        margin: 13px 0 0 0;
+        max-width: 600px;
+        p{
+            font-family: $fontfamily2;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 36px;
+            letter-spacing: 0.02em;
+            color: #1F1F1F;
+            opacity: 0.9;
+        }
+    }
+
+    &__img {
+        width: 64px;
+        height: 64px;
+        margin: 50px 0 18px 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #000000;
+    }
+
+    &__about {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #858585;
+        opacity: 0.74;
+        margin: 5px 0 0 0;
+    }
+
+    &__prev {
+        left: 0;
+        &:after{
+            font-size: 0;
+        }
+    }
+
+    &__next {
+        right:  inherit;
+        left: 83px;
+        transform: rotate(180deg);
+        &:after{
+            font-size: 0;
+        }
+    }
+    .slider-arrow{
+        top: 310px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 300ms ease-in-out;
+        svg{
+            width: 27px;
+            height: 22px;
+            transition: 300ms ease-in-out;
+        }
+        &:hover{
+            background-color: $bluecolor;
+            svg{
+                fill: #fff;
+            }
+        }
+    }
+}
+
