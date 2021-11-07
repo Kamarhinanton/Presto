@@ -13,6 +13,7 @@ $bluecolor:#0376C4;
 @import "block-3";
 @import "block-4";
 @import "block-5";
+@import "block-6";
 @import "form";
 
 .wrapper{
@@ -33,7 +34,7 @@ $bluecolor:#0376C4;
 
 .body-lock{
 	position: relative;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
 .root{
