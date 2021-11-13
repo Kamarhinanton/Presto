@@ -9,15 +9,15 @@ $bluecolor2:#EDF5FB;
 @import "null";
 @import "header";
 @import "footer";
-@import "block-1";
-@import "block-2";
-@import "block-3";
-@import "block-4";
-@import "block-5";
-@import "block-6";
-@import "block-7";
-@import "block-8";
-@import "block-9";
+@import "sections/block-1";
+@import "sections/block-2";
+@import "sections/block-3";
+@import "sections/block-4";
+@import "sections/block-5";
+@import "sections/block-6";
+@import "sections/block-7";
+@import "sections/block-8";
+@import "sections/block-9";
 @import "form";
 
 .wrapper{
