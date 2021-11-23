@@ -39,9 +39,18 @@ jobs:
   my_deploy:
     runs-on: ubuntu-latest
     needs: [my_tasting]
+    #local var
+    env:
+      VAR1: "this is job var"
+      VAR2: "tis is job var 2"
     steps:
     - name: Print "Hello message" in deploy
       run: echo "Hello world from deploy"
+      
+    - name: Print env vars
+      run: 
+        echo "Var1= ${{env.VAR1}}"
+        echo "Var2= ${{env.VAR2}}"
       
     - name: Printing deployment package
       run: echo "Deploy package name is ${{env.DEPLOY_PACKAGE_NAME}}"
