@@ -216,7 +216,7 @@ function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, pluginFolderCss, pluginFolderJs), Sprite, fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, pluginFolderCss, pluginFolderJs), Sprite);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.pluginFolderCss = pluginFolderCss;
