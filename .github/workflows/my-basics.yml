@@ -1,0 +1,26 @@
+
+name: Test-Basics
+
+on:
+
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  my_tasting:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print "Hello message"
+      run: echo "Hello world from tasting"
+  
+  my_deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print "Hello message"
+      run: echo "Hello world from deploy"
