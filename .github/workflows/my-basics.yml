@@ -1,0 +1,56 @@
+
+name: Test-Basics
+env:
+  APPLICATION_NAME: "MyFlask"
+  DEPLOY_PACKAGE_NAME : "flask_deploy-ver-${{github.sha}}"
+
+on:
+
+  push:
+    branches:
+     - master
+
+  workflow_dispatch:
+
+jobs:
+  my_tasting:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print "Hello message" in testing
+      run: echo "Hello world from tasting"
+
+    - name: Execure few commands
+      run:  |
+        echo "Hello message1"
+        echo "Hello message2"
+        echo "Application name: ${{env.APPLICATION_NAME}}"
+        
+    - name: List current folder
+      run: ls -la
+      
+    - name: Git clone my repo
+      uses: actions/checkout@v1
+      
+    - name: List current folder
+      run: ls -la
+      
+      
+  my_deploy:
+    runs-on: ubuntu-latest
+    needs: [my_tasting]
+    #local var
+    env:
+      VAR1: "this is job var"
+      VAR2: "tis is job var 2"
+    steps:
+    - name: Print "Hello message" in deploy
+      run: echo "Hello world from deploy"
+      
+    - name: Print env vars
+      run: 
+        echo "Var1= ${{env.VAR1}}"
+        echo "Var2= ${{env.VAR2}}"
+      
+    - name: Printing deployment package
+      run: echo "Deploy package name is ${{env.DEPLOY_PACKAGE_NAME}}"
